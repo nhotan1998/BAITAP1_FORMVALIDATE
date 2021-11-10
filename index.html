@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validate form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h4 class="title text-center my-4">Form Validate</h4>
+        <form>
+            <div class="form-group row">
+                <label for="fullname" class="col-sm-2 col-form-label">Full name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="full-name" />
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" />
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="phone" />
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="birthday" class="col-sm-2 col-form-label">Birthday</label>
+                <div class="col-sm-10">
+                    <!-- <input type="date" class="form-control" id="birthday" /> -->
+                    <input id="birthday" type="text" class="form-control" placeholder="dd/mm/YYY" name="bd">
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" />
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="confirmpassword" class="col-sm-2 col-form-label">Confirm password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="confirm-password" />
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+
+            <div class="avatar-default avatar-wrapper">
+                <input id="btn-upload" type="file" />
+                <img src="#" alt="" class="avatar-upload image-cover avatar-default-image" />
+                <label for="btn-upload" class="icon-upload icon-upload-avatar">Avatar upload</label>
+            </div>
+            <div class="form-group row text-center">
+                <div class="col-sm-6">
+                    <button type="submit" class="btn-submit btn btn w-25 py-2  border-dark">
+                        Add
+                    </button>
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn-reset btn btn w-25 py-2  border-dark">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="profile p-4 pb-3 border  mt-5">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row mb-2">
+                        <div class="col-sm-3 font-weight-bold">Full Name:</div>
+                        <div class="col-sm-9 full-name"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 font-weight-bold">Email:</div>
+                        <div class="col-sm-9 email"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 font-weight-bold">Phone:</div>
+                        <div class="col-sm-9 phone"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-3 font-weight-bold">Birthday:</div>
+                        <div class="col-sm-9 birthday"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="avatar-center avatar-default">
+                        <img src="#" alt="" class="img-preview image-cover avatar-default-image" />
+                        <label class="icon-upload">Avatar preview</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/validate.js"></script>
+</body>
+
+</html>
