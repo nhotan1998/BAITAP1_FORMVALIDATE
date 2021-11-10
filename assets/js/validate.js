@@ -43,7 +43,7 @@
 
     //click button
     btnSubmit.addEventListener("click", submitForm);
-    btnReset.addEventListener("click", resetData);
+    btnReset.addEventListener("click", resetForm);
 
     // Validation 
     function Validation(selector , msgError = "") {
